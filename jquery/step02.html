@@ -6,8 +6,36 @@
     <script src="../js/jquery-3.6.0.js"></script>
     <script type="text/javascript">
 		$(function(){
-            $('div').addClass('s');//element selector
+            //$('div').addClass('s');//element selector
+            //$('.third.sung').addClass('s');//class selector
             //$('#root').addClass('s');//id selector
+            //$('#root > div').addClass('s');//child selector
+            //$('#root  div').addClass('s');//descendant selector
+            //$('li:nth-child(2)').addClass('s');
+            //$('li:nth(2)').addClass('s');
+            //$('li:even').addClass("s");
+            //$('li:odd').addClass("s");
+            //$('li:gt(2)').addClass("s");
+            //$('li:lt(2)').addClass("s");
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            document.getElementById("btn")
+            .addEventListener("click",function(){
+                document.getElementById("root").style.display 
+                    = "block";
+            });
+            $("#btn").click(function(){
+                $('#root').css("display","block");
+            });
+            
         });
     </script>
 	<style type="text/css">
@@ -43,7 +71,9 @@
 	</style>
 </head>
 <body>
-	
+	<div id="header">
+		<button id="btn">보여줘...</button>
+	</div>
 	<div id="panel">
 		<div id="root">
 			div id="root""
